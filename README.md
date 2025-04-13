@@ -71,7 +71,9 @@ JOIN Spring23_S003_12_Subscription_mealkit o2 ON m.mealkit_id = o2.mealkit_id
 GROUP BY m.cusine_type
 ORDER BY COUNT(m.mealkit_id) DESC;
 
-### 2. Ideal Warehosue Locatios
+### 2. Ideal Warehouse Locations
+
+```sql
 SELECT c2.Address, COUNT(o1.customer_id) AS Number_Of_Orders
 FROM Spring23_S003_12_Customer2 c2
 JOIN Spring23_S003_12_orders1 o1 ON c2.customer_id = o1.customer_id
@@ -79,8 +81,11 @@ GROUP BY c2.Address
 ORDER BY Number_Of_Orders DESC
 FETCH FIRST 5 ROWS ONLY;
 
- ### 3. Delivery Driver performance
+### 3. Delivery Driver Performance
+
 Analyzed average delivery time vs. distance traveled to identify the most and least efficient drivers.
+
+---
 
 ## 🎯 Project Goals
 
@@ -103,7 +108,7 @@ Analyzed average delivery time vs. distance traveled to identify the most and le
 
 - Real-world database design involves more than just schema—it’s about aligning data with business goals  
 - Importance of data-driven decisions in logistics and customer service  
-- Effective teamwork and clear task delegation were key to our success
+- Effective teamwork and clear task delegation were key to our success  
 
 ---
 
