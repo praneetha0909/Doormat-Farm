@@ -88,6 +88,7 @@ JOIN Spring23_S003_12_Delivery_Order o ON o.Worker_SSN = dw.worker_ssn
 GROUP BY wd.warehouse_id, dw.worker_ssn, Distance_Covered_per_order
 ORDER BY Average_Delivery_Time ASC
 FETCH FIRST 5 ROWS ONLY;
+```
 
 ### **🎯 Project Goals**
 - Enhance data-driven decision-making for logistics  
